@@ -37,6 +37,29 @@ $(function () {
         "startDate": new Date(),
 
     }, function (start, end, label) {
- 
+
     });
 });
+ymaps.ready(init);
+
+function init() {
+    var myMap = new ymaps.Map('map', {
+        center: [56.645523, 43.463810],
+        zoom: 9
+    }, {
+        searchControlProvider: 'yandex#search'
+    }),
+        myPlacemark = new ymaps.Placemark(myMap.getCenter());
+
+    myMap.geoObjects.add(myPlacemark);
+
+    myPlacemark.events
+        .add('mouseenter', function (e) {
+            // Ссылку на объект, вызвавший событие,
+            // можно получить из поля 'target'.
+            e.get('target').options.set('preset', 'islands#greenIcon');
+        })
+        .add('mouseleave', function (e) {
+            e.get('target').options.unset('preset');
+        });
+}
