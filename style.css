@@ -162,7 +162,9 @@ body::-webkit-scrollbar-thumb {
     margin-top: 20px;
 
 }
-
+.number__block .title__block {
+    text-align: center;
+}
 
 
 .card img {
