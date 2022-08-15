@@ -17,6 +17,7 @@
     <script src="modernizr.custom.63321.js"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <script type="text/javascript" src="scripts.js"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
@@ -44,83 +45,106 @@
 
 <body>
     <!--Навбар-->
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container">
-            <div class="row">
-                <a href="#" class="navbar-brand header__logo col-sm-3">
-                    <img src="img/logo.png" alt="logo"></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            </div>
-            <div class="col-sm-9">
+    <div class="navbar_div">
+        <nav class="navbar navbar-expand-lg navbar-collapse navbar-light">
+            <div class="container">
                 <div class="row">
-                    <span class="nav__contacts col-4 col-sm-6">Городец Большой Кировский съезд, 24 тел.
-                        8(83161)2-26-06 +79036079661
-                        e-mail: yaotel@yandex.ru</span>
+                    <div class="col-sm-2 ">
+                        <a href="#" class="navbar-brand">
+                            <img src="img/logo.png" alt="logo"></a>
+                    </div>
+                    <div class="col-sm-10">
+                        <div class="row">
+                            <div class="col">
+                                <div class="nav__contacts">Городец Большой Кировский съезд, 24 тел.
+                                    8(83161)2-26-06 +79036079661
+                                    e-mail: yaotel@yandex.ru</div>
+                            </div>
+                            <div class="row ">
+                                <div class="col">
+
+                                    <ul class="navbar-nav navbar-collapse">
+                                        <li class="nav-item active">
+                                            <a href="#" class="nav-link"> Номера</a>
+                                        </li>
+                                        <li class="nav-item active">
+                                            <a href="#" class="nav-link"> Бронирование</a>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link"> О гостинице</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link"> Достопримечательности</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#" class="nav-link"> Контакты</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
-                <div class="collapce col-12 col-sm-12" id="navbarResponsive">
-                    <ul class="navbar-nav">
-                        <li class="nav-item active">
-                            <a href="#" class="nav-link"> Номера</a>
-                        </li>
-                        <li class="nav-item active">
-                            <a href="#" class="nav-link"> Бронирование</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a href="#" class="nav-link"> О гостинице</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link"> Галерея</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link"> Контакты</a>
-                        </li>
-                    </ul>
+            </div>
+        </nav>
+    </div>
+    <!--Карусель и форма-->
+    <div class="hotel-start">
+        <div id="carouselExampleControls" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner ">
+                <div class="carousel-item active">
+                    <img src="img/hall/IMG_1309.jpg" class="d-block w-100" alt="фото">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/hall/IMG_1320.jpg" class="d-block w-100" alt="фото">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/hall/IMG_0928.jpg" class="d-block w-100" alt="фото">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/hall/IMG_0970.jpg" class="d-block w-100" alt="фото">
                 </div>
             </div>
         </div>
-        </div>
-    </nav>
-    <!--Карусель и форма-->
-    <hotel-index>
 
-        <div class="carousel hotel-index-carousel slide">
-            <div id="carouselExampleControls" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                <div class="carousel-inner ">
-                    <div class="carousel-item active">
-                        <img src="img/hall/IMG_1309.jpg" class="d-block w-100" alt="фото">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="img/hall/IMG_1320.jpg" class="d-block w-100" alt="фото">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="img/hall/IMG_0928.jpg" class="d-block w-100" alt="фото">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="img/hall/IMG_0970.jpg" class="d-block w-100" alt="фото">
-                    </div>
-                </div>
-                <div class="container ">
-
-                    <div class="hotel-index col-8 ">
-                        <span class="title__booking">Забронировать сейчас</span>
-                        <div class="form__booking">
-                            <form class="row">
-                                <div class="col-5">
-                                    <label class="visually-hidden" for="specificSizeInputName">Имя</label>
-                                    <input type="text" class="form-control" id="specificSizeInputName"
-                                        placeholder="Иван Иванов">
+        <div class="start__booking">
+            <form action="">
+                <div class="container">
+                    <div class="well clearfix">
+                        <fieldset class="well well-form1">
+                            <span class="title__booking">Забронировать сейчас</span>
+                            <div class="row">
+                                <div class="col-4 col-lg-4 col-sm-12  ">
+                                    <label class="control-label" for="firstname">ФИО</label>
+                                    <input class="form-control" type="text" name="firstname" id="firstname"
+                                        placeholder="Введите ФИО" />
                                 </div>
-                                <div class="col-2">
+                                <div class="col-4 col-lg-4 col-sm-12  ">
+                                    <label class="control-label" for="phoneNumber">Номер тел.</label>
+                                    <div class="form-group input-group">
+                                        <span class="input-group-addon primary"><i class="fa fa-phone"></i></span>
+                                        <input type="text" class="form-control" name="phoneNumber" id="phoneNumber"
+                                            placeholder="Введите номер телефона">
+                                    </div>
+                                </div>
+                                <div class="col-4 col-lg-4 col-sm-12  ">
+                                    <label class="control-label" for="email">E-mail</label>
+                                    <div class="form-group input-group">
+                                        <span class="input-group-addon primary"><i class="fa fa-envelope-o"></i></span>
+                                        <input type="text" class="form-control" name="email" id="email"
+                                            placeholder="Введите e-mail">
+                                    </div>
+                                </div>
+
+                                <div class="col-4 col-lg-4 col-sm-6  ">
+                                    <label class="control-label" for="booking-date">Даты заезда:</label>
+
                                     <input type="text" id="calendar" name="daterange" value="01/01/2018 - 01/15/2018" />
                                 </div>
 
-                                <div class="col-2">
+
+                                <div class="col-2  col-lg-2 col-sm-3">
 
                                     <select class="form-select" id="specificSizeSelect">
                                         <option selected>Выберите...</option>
@@ -128,196 +152,208 @@
                                         <option value="2">Полулюкс</option>
                                         <option value="3">Семейный</option>
                                         <option value="4">Стандарт</option>
+                                        <option value="5">Стандарт с видом</option>
+                                        <option value="6">Стандарт с балконом</option>
                                     </select>
                                 </div>
 
-                                <div class="col-auto">
-                                    <button type="submit" class="btn btn-primary">Отправить</button>
+                                <div class="col-2  col-lg-2 col-sm-3">
+                                    <button class="btn btn-warning "><i class="fa fa-send"></i> Отправить</button>
                                 </div>
-
-                            </form>
-                        </div>
+                        </fieldset>
                     </div>
                 </div>
-
-            </div>
-
-    </hotel-index>
-    <!--Блок номеров-->
-    <div class="container">
-        <div class="title__block">
-            Номера
+            </form>
         </div>
 
-        <div class="row row-cols-md-4">
-            <div class="col">
-                <div class="card">
+    </div>
 
-                    <div id="cardCarousel" class="carousel slide" data-interval="false">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#cardCarousel" data-bs-slide-to="0" class="active"
-                                aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#cardCarousel" data-bs-slide-to="1"
-                                aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#cardCarousel" data-bs-slide-to="2"
-                                aria-label="Slide 3"></button>
+    <!--Блок номеров-->
+    <div class="number__block">
+        <div class="container">
+            <div class="title__block">
+                Номера
+            </div>
+            <div class="row row-cols-md-4">
+                <div class="col">
+                    <div class="card">
+                        <div id="cardCarousel" class="carousel slide" data-interval="false">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#cardCarousel" data-bs-slide-to="0" class="active"
+                                    aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#cardCarousel" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#cardCarousel" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="img/luxe/IMG_0548.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/luxe/IMG_0546.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/luxe/IMG_0537.jpg" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#cardCarousel"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden"></span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#cardCarousel"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden"></span>
+                            </button>
                         </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="img/luxe/IMG_0548.jpg" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="img/luxe/IMG_0546.jpg" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="img/luxe/IMG_0537.jpg" class="d-block w-100" alt="...">
-                            </div>
+
+                        <h5 class="card-title">Люкс</h5>
+
+                        <div class="card-body">
+                            <ul>
+                                <li>Двуспальная кровать</li>
+                                <li>Площадь номера 30 кв.м</li>
+                                <li>Вид из окна на Волгу</li>
+
+                            </ul>
+                            <button class="btn btn__card btn-warning " type="button" data-bs-toggle="modal"
+                                data-bs-target="#numberLuxe">Подробнее</button>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#cardCarousel"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden"></span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#cardCarousel"
-                            data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden"></span>
-                        </button>
-                    </div>
-                    <h5 class="card-title">Люкс</h5>
-                    <div class="card-body">
-                        <p class="card-text">Площадь номера 45 кв.м. Большая двуспальная кровать.</p>
-                        <button class="btn" type="button" data-bs-toggle="modal"
-                            data-bs-target="#numberLuxe">Подробнее</button>
                     </div>
                 </div>
-            </div>
-            <div class="col">
-                <div class="card">
 
-                    <div id="cardCarousel2" class="carousel slide" data-interval="false">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#cardCarousel2" data-bs-slide-to="0" class="active"
-                                aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#cardCarousel2" data-bs-slide-to="1"
-                                aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#cardCarousel2" data-bs-slide-to="2"
-                                aria-label="Slide 3"></button>
+                <div class="col">
+                    <div class="card">
+                        <div id="cardCarousel2" class="carousel slide" data-interval="false">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#cardCarousel2" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#cardCarousel2" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#cardCarousel2" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="img/poluluxe/IMG_0562.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/poluluxe/IMG_0568.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/poluluxe/IMG_0632.jpg" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#cardCarousel2"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden"></span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#cardCarousel2"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden"></span>
+                            </button>
                         </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="img/poluluxe/IMG_0562.jpg" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="img/poluluxe/IMG_0568.jpg" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="img/poluluxe/IMG_0632.jpg" class="d-block w-100" alt="...">
-                            </div>
+                        <h5 class="card-title">Полулюкс</h5>
+                        <div class="card-body">
+                            <li>Двуспальная + односпальная кровати/ одна двуспальная кровать</li>
+                            <li>Площадь номера 30 кв.м</li>
+                            <li>Вид из окна на Волгу</li>
+                            <button class="btn btn-warning " type="button" data-bs-toggle="modal"
+                                data-bs-target="#numberPolLuxe">Подробнее</button>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#cardCarousel2"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden"></span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#cardCarousel2"
-                            data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden"></span>
-                        </button>
-                    </div>
-                    <h5 class="card-title">Полулюкс</h5>
-                    <div class="card-body">
-                        <p class="card-text">Общая площадь номера 30 кв.м. Дизайн выполнен в романтическом стиле.
-                            Двуспальная кровать + односпальное место. Вид из
-                            окна на волжские просторы</p>
-                        <button class="btn" type="button" data-bs-toggle="modal"
-                            data-bs-target="#numberPolLuxe">Подробнее</button>
                     </div>
                 </div>
-            </div>
-            <div class="col">
-                <div class="card">
+                <div class="col">
+                    <div class="card">
 
-                    <div id="cardCarousel3" class="carousel slide" data-interval="false">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#cardCarousel3" data-bs-slide-to="0" class="active"
-                                aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#cardCarousel3" data-bs-slide-to="1"
-                                aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#cardCarousel3" data-bs-slide-to="2"
-                                aria-label="Slide 3"></button>
+                        <div id="cardCarousel3" class="carousel slide" data-interval="false">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#cardCarousel3" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#cardCarousel3" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#cardCarousel3" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="img/semei/IMG_1152.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/semei/IMG_1196.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/semei/IMG_1204.jpg" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#cardCarousel3"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true" href=""></span>
+                                <span class="visually-hidden"></span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#cardCarousel3"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden"></span>
+                            </button>
                         </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="img/semei/IMG_1152.jpg" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="img/semei/IMG_1196.jpg" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="img/semei/IMG_1204.jpg" class="d-block w-100" alt="...">
-                            </div>
+                        <h5 class="card-title">Полулюкс семейный</h5>
+                        <div class="card-body">
+                            <li>Двухкомнатный номер</li>
+                            <li>Площадь номера 60 кв.м</li>
+                            <li>Вид из окна на историческую часть города</li>
+                            <button class="btn btn-warning " type="button" data-bs-toggle="modal"
+                                data-bs-target="#numberSemei">Подробнее</button>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#cardCarousel3"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true" href=""></span>
-                            <span class="visually-hidden"></span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#cardCarousel3"
-                            data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden"></span>
-                        </button>
-                    </div>
-                    <h5 class="card-title">Полулюкс семейный</h5>
-                    <div class="card-body">
-                        <p class="card-text">Двухкомнатный номер. В одной комнате большая двуспальная кровать, во второй
-                            две односпальных кровати. Вид из комнат на историческую часть города, на Троицкую гору.</p>
-                        <button class="btn" type="button" data-bs-toggle="modal"
-                            data-bs-target="#numberSemei">Подробнее</button>
                     </div>
                 </div>
-            </div>
-            <div class="col">
-                <div class="card">
+                <div class="col">
+                    <div class="card">
 
-                    <div id="cardCarousel4" class="carousel slide" data-interval="false">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#cardCarousel4" data-bs-slide-to="0" class="active"
-                                aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#cardCarousel4" data-bs-slide-to="1"
-                                aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#cardCarousel4" data-bs-slide-to="2"
-                                aria-label="Slide 3"></button>
+                        <div id="cardCarousel4" class="carousel slide" data-interval="false">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#cardCarousel4" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#cardCarousel4" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#cardCarousel4" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="img/standart/IMG_0716.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/standart/IMG_0792.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/standart/IMG_1094.jpg" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#cardCarousel4"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true" href=""></span>
+                                <span class="visually-hidden"></span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#cardCarousel4"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden"></span>
+                            </button>
                         </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="img/standart/IMG_0716.jpg" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="img/standart/IMG_0792.jpg" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="img/standart/IMG_1094.jpg" class="d-block w-100" alt="...">
-                            </div>
+                        <h5 class="card-title">Стандарт</h5>
+                        <div class="card-body">
+                            <li>Двухместные номера</li>
+                            <li>Площадь каждого номера 20 кв.м.</li>
+                            <li>Номера с видом на Волгу</li>
+
+                            <button class="btn btn-warning " type="button" data-bs-toggle="modal"
+                                data-bs-target="#numberStandart">Подробнее</button>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#cardCarousel4"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true" href=""></span>
-                            <span class="visually-hidden"></span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#cardCarousel4"
-                            data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden"></span>
-                        </button>
-                    </div>
-                    <h5 class="card-title">Стандарт</h5>
-                    <div class="card-body">
-                        <p class="card-text">Площадь каждого номера 20 кв.м.</p>
-                        <button class="btn " type="button" data-bs-toggle="modal"
-                            data-bs-target="#numberStandart">Подробнее</button>
                     </div>
                 </div>
             </div>
@@ -362,6 +398,31 @@
                             <span class="visually-hidden"></span>
                         </button>
 
+                    </div>
+                    <div class="modal__text">
+                        <p>Просторный номер с повышенным уровнем комфорта, который разделен на
+                            гостиную и спальную зоны. Для размещения одного или двух гостей. Номер расположен на 2 этаже
+                            гостиницы. Вид на Волгу и внутренний дворик.Площадь: 45 м².
+                        </p>
+                        <p> В стоимость номера входят:
+                        <ul>
+                            <li>завтрак;</li>
+                            <li>бесплатный интернет (Wi-Fi);</li>
+                            <li>набор полотенец;</li>
+                            <li>набор гигиенических принадлежностей;</li>
+                            <li>фен;</li>
+                            <li>парковка для личного автомобиля;</li>
+                            <li>телевизор;</li>
+                            <li>электрический чайник;</li>
+                            <li>холодильник;</li>
+                            <li>кондиционер.</li>
+                        </ul>
+                        </p>
+                        <p>Ждём Вас в гости!</p>
+
+                    </div>
+                    <div class="modal__btn">
+                        <a class="btn btn-warning " href="#booking" role="button"> Забронировать номер</a>
                     </div>
                 </div>
             </div>
@@ -466,7 +527,32 @@
 
                         </button>
                     </div>
+                    <div class="modal__text">
+                        <p>Номера с повышенным уровнем комфорта. Для размещения одного, двух или трёх гостей (для
+                            светло-зелёного номера). Номер на троих расположен на 2-м
+                            этаже, номер с большой двуспальной кроватью расположен на 3-м
+                            гостиницы. Вид на Волгу и внутренний дворик.Площадь: 30 м².
+                        </p>
+                        <p> В стоимость номера входят:
+                        <ul>
+                            <li>завтрак;</li>
+                            <li>бесплатный интернет (Wi-Fi);</li>
+                            <li>набор полотенец;</li>
+                            <li>набор гигиенических принадлежностей;</li>
+                            <li>фен;</li>
+                            <li>парковка для личного автомобиля;</li>
+                            <li>телевизор;</li>
+                            <li>электрический чайник;</li>
+                            <li>холодильник.</li>
 
+                        </ul>
+                        </p>
+                        <p>Ждём Вас в гости!</p>
+
+                    </div>
+                    <div class="modal__btn">
+                        <a class="btn btn-warning " href="#booking" role="button"> Забронировать номер</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -515,6 +601,33 @@
                         </button>
 
                     </div>
+                    <div class="modal__text">
+                        <p>Двухкомнатный номер идеально подходит для семейного отдыха и долговременного пребывания.
+                            Удобная планировка
+                            номера. В первой комнате две односпальных кровати, во втором - большая двуспальная кровать.
+                            Номер расположен на 3-м этаже, окна выходят на историческую часть города.
+                            Площадь: 60 м².
+                        </p>
+                        <p> В стоимость номера входят:
+                        <ul>
+                            <li>завтрак;</li>
+                            <li>бесплатный интернет (Wi-Fi);</li>
+                            <li>набор полотенец;</li>
+                            <li>набор гигиенических принадлежностей;</li>
+                            <li>фен;</li>
+                            <li>парковка для личного автомобиля;</li>
+                            <li>телевизор;</li>
+                            <li>электрический чайник;</li>
+                            <li>холодильник.</li>
+
+                        </ul>
+                        </p>
+                        <p>Ждём Вас в гости!</p>
+
+                    </div>
+                    <div class="modal__btn">
+                        <a class="btn btn-warning " href="#booking" role="button"> Забронировать номер</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -544,64 +657,72 @@
                                 aria-label="Slide 7"></button>
                             <button type="button" data-bs-target="#modalStandart" data-bs-slide-to="7"
                                 aria-label="Slide 8"></button>
-
+                            <button type="button" data-bs-target="#modalStandart" data-bs-slide-to="8"
+                                aria-label="Slide 9"></button>
                         </div>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="img/poluluxe/IMG_0562.jpg" class="d-block w-100" alt="...">
+                                <img src="img/standart/IMG_0716.jpg" class="d-block w-100" alt="...">
                                 <div class="carousel-caption d-none d-md-block">
-                                    <h5>Джуниор сьют полулюкс</h5>
-                                    <p>Номер с видом на Волгу в светло-зелёных тонах.</p>
+                                    <h5>Стандарт</h5>
+                                    <p>Номер стандарт с большой двуспальной кроватью</p>
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <img src="img/poluluxe/IMG_0568.jpg" class="d-block w-100" alt="...">
+                                <img src="img/standart/IMG_0720.jpg" class="d-block w-100" alt="...">
                                 <div class="carousel-caption d-none d-md-block">
-                                    <h5>Джуниор сьют полулюкс</h5>
-                                    <p>Номер с видом на Волгу в светло-зелёных тонах.</p>
+                                    <h5>Стандарт</h5>
+                                    <p>Номер стандарт с большой двуспальной кроватью</p>
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <img src="img/poluluxe/IMG_0626.jpg" class="d-block w-100" alt="...">
+                                <img src="img/standart/IMG_0792.jpg" class="d-block w-100" alt="...">
                                 <div class="carousel-caption d-none d-md-block">
-                                    <h5>Джуниор сьют полулюкс</h5>
-                                    <p>Номер с видом на Волгу в светло-зелёных тонах.</p>
+                                    <h5>Стандарт с видом на Волгу</h5>
+                                    <p>Номер с двумя односпальными кроватями и видом на Волгу</p>
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <img src="img/poluluxe/IMG_0632.jpg" class="d-block w-100" alt="...">
+                                <img src="img/standart/IMG_0797.jpg" class="d-block w-100" alt="...">
                                 <div class="carousel-caption d-none d-md-block">
-                                    <h5>Джуниор сьют полулюкс</h5>
-                                    <p>Номер с видом на Волгу в светло-зелёных тонах.</p>
+                                    <h5>Стандарт с видом на Волгу</h5>
+                                    <p>Номер с двумя односпальными кроватями и видом на Волгу</p>
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <img src="img/poluluxe/IMG_0639.jpg" class="d-block w-100" alt="...">
+                                <img src="img/standart/IMG_0818.jpg" class="d-block w-100" alt="...">
                                 <div class="carousel-caption d-none d-md-block">
-                                    <h5>Джуниор сьют полулюкс</h5>
-                                    <p>Номер полулюкс с большой двуспальной кроватью.</p>
+                                    <h5>Стандарт с видом на Волгу</h5>
+                                    <p>Номер с двумя односпальными кроватями и видом на Волгу</p>
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <img src="img/poluluxe/IMG_0657.jpg" class="d-block w-100" alt="...">
+                                <img src="img/standart/IMG_1094.jpg" class="d-block w-100" alt="...">
                                 <div class="carousel-caption d-none d-md-block">
-                                    <h5>Джуниор сьют полулюкс</h5>
-                                    <p>Номер полулюкс с большой двуспальной кроватью.</p>
+                                    <h5>Стандарт с балконом и видом на Волгу</h5>
+                                    <p>Номер с двумя односпальными кроватями, балконом и видом на Волгу</p>
                                 </div>
                             </div>
 
                             <div class="carousel-item">
-                                <img src="img/poluluxe/IMG_0664.jpg" class="d-block w-100" alt="...">
+                                <img src="img/standart/IMG_1122.jpg" class="d-block w-100" alt="...">
                                 <div class="carousel-caption d-none d-md-block">
-                                    <h5>Джуниор сьют полулюкс</h5>
-                                    <p>Номер полулюкс с большой двуспальной кроватью.</p>
+                                    <h5>Стандарт с балконом и видом на Волгу</h5>
+                                    <p>Номер с двумя односпальными кроватями, балконом и видом на Волгу</p>
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <img src="img/poluluxe/IMG_0695.jpg" class="d-block w-100" alt="...">
+                                <img src="img/standart/IMG_1113.jpg" class="d-block w-100" alt="...">
                                 <div class="carousel-caption d-none d-md-block">
-                                    <h5>Джуниор сьют полулюкс</h5>
-                                    <p>Номер полулюкс с большой двуспальной кроватью.</p>
+                                    <h5>Вид с балкона номера Стандарт</h5>
+
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/standart/IMG_1111.jpg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Вид с балкона номера Стандарт</h5>
+
                                 </div>
                             </div>
 
@@ -617,19 +738,42 @@
 
                         </button>
                     </div>
+                    <div class="modal__text">
+                        <p> Комфортабельные номера для размещения одного или двух человек. На выбор представлены
+                            номера с двумя односпальными кроватями или с одной двуспальной кроватью. Окна номера,
+                            расположенного на 2-м этаже, выходят на внутренний двор. Номера, расположенные на 3-м этаже
+                            имею вид на Волгу, также один из номеров имеет балкон. Площадь каждого номера 20 м².
+                        </p>
+                        <p> В стоимость номера входят:
+                        <ul>
+                            <li>завтрак;</li>
+                            <li>бесплатный интернет (Wi-Fi);</li>
+                            <li>набор полотенец;</li>
+                            <li>набор гигиенических принадлежностей;</li>
+                            <li>фен;</li>
+                            <li>парковка для личного автомобиля;</li>
+                            <li>телевизор;</li>
+                            <li>электрический чайник;</li>
+                            <li>холодильник.</li>
 
+                        </ul>
+                        </p>
+                        <p>Ждём Вас в гости!</p>
+
+                    </div>
+                    <div class="modal__btn">
+                        <a class="btn btn-warning " href="#booking" role="button"> Забронировать номер</a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <!--Форма брони-->
-    <div id="div_form" class="tab_content">
-        <form action="">
-            <div class="container">
+    <div id="booking" class="tab_content">
+        <div class="container">
+            <form action="">
                 <div class="well clearfix">
-
-                    <fieldset class="well well-form">
-
+                    <fieldset class="well well-form2">
                         <h4 class="title__booking">Забронировать номер</h4>
                         <div class="row">
                             <div class="col">
@@ -654,7 +798,19 @@
 
                             <div class="col">
                                 <div class="row">
-                                    <div class="col-sm-7">
+                                    <div class="col-4  col-lg-4 col-sm-4">
+                                        <label class="control-label" for="form_days">Категория номера</label>
+                                        <select class="form-select" id="specificSizeSelect">
+                                            <option selected>Выберите...</option>
+                                            <option value="1">Люкс</option>
+                                            <option value="2">Полулюкс</option>
+                                            <option value="3">Семейный</option>
+                                            <option value="4">Стандарт</option>
+                                            <option value="5">Стандарт с видом</option>
+                                            <option value="6">Стандарт с балконом</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-4  col-lg-4 col-sm-4">
                                         <label class="control-label" for="booking-date">Даты заезда</label>
                                         <div class="form-group input-group">
                                             <input type="text" id="calendar2" name="daterange"
@@ -686,119 +842,172 @@
 
                                 <div class="col-sm-12">
                                     <label class="control-label">Доп. информация</label>
-                                    <textarea class="input-xlarge form-control" id="message" name="message" rows="5"
+                                    <textarea class="input-xlarge form-control" id="message" name="message" rows="4"
                                         placeholder="Укажите дополнительную информацию"></textarea>
                                 </div>
                             </div>
                             <button class="btn btn-warning "><i class="fa fa-send"></i> Отправить</button>
                         </div>
+
                     </fieldset>
                 </div>
-
-        </form>
+            </form>
+        </div>
     </div>
-
     <!--Об отеле-->
     <div class="hotel">
         <div class="container">
             <h4 class="title__block"> О гостинице</h4>
-            <div id="carouselHotel" class="carousel slide about__hotel" data-bs-ride="carousel">
-                <div class="carousel-inner about__hotel">
-                    <div class="carousel-item active">
-                        <img src="img/hotel/IMG_1286.jpg" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="img/hotel/IMG_1290.jpg" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="img/hotel/IMG_1309.jpg" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="img/hotel/IMG_1320.jpg" class="d-block w-100" alt="...">
+            <span class="info_hotel">
+
+                Гостиница "ЯРЪ" расположен в 400-х метрах от центра города Городец на берегу реки Волга.
+                Уютные гостиничные номера и ресторан расположены в красивом купеческом доме, памятнике старинного
+                зодчества, который был полностью отреставрирован и открыт для посещения жителей и гостей старинного
+                города. <p>
+                    В 300-х метрах от гостиничного комплекса открыт музейный квартал и комплекс "Город мастеров" -
+                    шедевр
+                    деревянного
+                    зодчества.</p>
+
+
+            </span>
+            <div class="row">
+                <div class="col">
+                    <div id="carouselHotel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner about__hotel">
+                            <div class="carousel-item active">
+                                <img src="img/hotel/d0018.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/hotel/IMG_1309.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/hotel/IMG_1320.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/hotel/IMG_1286.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/hotel/IMG_1290.jpg" class="d-block w-100" alt="...">
+                            </div>
+
+
+                        </div>
+
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselHotel"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselHotel"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden"></span>
+                        </button>
                     </div>
                 </div>
-
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselHotel"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden"></span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselHotel"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden"></span>
-                </button>
-            </div>
-            <div class="info_hotel">
-                Гостиница Яръ находится в 200 метрах от величественной реки Волги. Окна номеров выходят либо на волжский
-                берег, либо на историческу часть города.
+                <div class="col">
+                    <span class="info2_hotel">Время заезда: 14:00</span>
+                    <span class="info2_hotel">Время выезда: 12:00</span>
+                </div>
             </div>
         </div>
     </div>
+
     <!--Галерея-->
     <div class="gallery">
-        <h4 class="title__block"> Галерея </h4>
+        <h4 class="title__block"> Достопримечательности </h4>
         <div class="container">
-            <div class="main">
-                <div id="mi-slider" class="mi-slider">
-                    <ul>
-                        <li><a href="#"><img src="img/gallery/gorodmasterov.jpg" alt="img01">
-                                <h4>Город Мастеров</h4>
-                            </a></li>
-                        <li><a href="#"><img src="img/gallery/IMG_8046.jpg" alt="img02">
-                                <h4>Музей самоваров</h4>
-                            </a></li>
-                        <li><a href="#"><img src="img/gallery/gal.jpg" alt="img03">
-                                <h4>Музей добра</h4>
-                            </a></li>
-                        <li><a href="#"><img src="img/gallery/155.jpg" alt="img04">
-                                <h4>Краеведческий музей</h4>
-                            </a></li>
-
-                    </ul>
-                    <ul>
-                        <li><a href="#"><img src="img/gallery/vor.jpg" alt="img05">
-                                <h4>Сквер А.В.Ворожейкина</h4>
-                            </a></li>
-                        <li><a href="#"><img src="images/6.jpg" alt="img06">
-                                <h4>Сквер пионерии</h4>
-                            </a></li>
-                        <li><a href="#"><img src="images/7.jpg" alt="img07">
-                                <h4>Святое озеро</h4>
-                            </a></li>
-                        <li><a href="#"><img src="images/8.jpg" alt="img08">
-                                <h4>Парк КиО</h4>
-                            </a></li>
-                    </ul>
-                    <ul>
-                        <li><a href="#"><img src="images/9.jpg" alt="img09">
-                                <h4>Улица Ленина</h4>
-                            </a></li>
-                        <li><a href="#"><img src="images/10.jpg" alt="img10">
-                                <h4>Улица Рублёва</h4>
-                            </a></li>
-                        <li><a href="#"><img src="images/11.jpg" alt="img11">
-                                <h4>Улица Набережная Революции</h4>
-                            </a></li>
-                    </ul>
-
-                    <nav>
-                        <a href="#">Музеи</a>
-                        <a href="#">Достопримечательности</a>
-                        <a href="#">Улицы</a>
-                    </nav>
+            <div id="carousel__gallery" class="carousel  slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel__gallery" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carousel__gallery" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carousel__gallery" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carousel__gallery" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carousel__gallery" data-bs-slide-to="4"
+                        aria-label="Slide 5"></button>
+                    <button type="button" data-bs-target="#carousel__gallery" data-bs-slide-to="5"
+                        aria-label="Slide 6"></button>
+                    <button type="button" data-bs-target="#carousel__gallery" data-bs-slide-to="6"
+                        aria-label="Slide 7"></button>
+                    <button type="button" data-bs-target="#carousel__gallery" data-bs-slide-to="7"
+                        aria-label="Slide 8"></button>
                 </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/gallery/IMG_8046.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Терем русского самовара</h5>
+                            <p>улица Набережная Революции, 11</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/gallery/IMG_1339.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Памятник А. Невского</h5>
+                            <p>улица Набережная Революции</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/gallery/IMG_1353.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Дом-музей графини Паниной</h5>
+                            <p>улица Андрея Рублёва, д. 16</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/gallery/gorodmasterov.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Город мастеров</h5>
+                            <p>
+                                ул. Набережная Юрия Долгорукого, д. 1</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/gallery/IMG_1364.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Музей пряника</h5>
+                            <p>улица Ленина, д.2</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/gallery/IMG_1370.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Музей "Городец на Волге"</h5>
+                            <p>улица Ленина, д. 9</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/gallery/IMG_1377.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Краеведческий музей</h5>
+                            <p>улица Ленина, д.11</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/gallery/IMG_1345.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Галерея добра</h5>
+                            <p>улица Набережная Революции, 10</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel__gallery"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Предыдущий</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel__gallery"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Следующий</span>
+                </button>
             </div>
-        </div><!-- /container -->
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-        <script src="jquery.catslider.js"></script>
-        <script>
-            $(function () {
-
-                $('#mi-slider').catslider();
-
-            });
-        </script>
+        </div>
     </div>
     <!--Контакты-->
     <div class="contacts">
