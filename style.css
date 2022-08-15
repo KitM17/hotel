@@ -25,11 +25,6 @@ h1 {
     text-align: center;
 }
 
-ol {
-    color: coral;
-}
-
-
 
 a {
     color: #836e40;
@@ -263,9 +258,9 @@ input {
 .input-group-addon.primary {
     color: rgb(255, 255, 255);
     background-color: #836e40;
-    ;
+
     border-color: #836e40;
-    ;
+
 }
 
 .hotel {
@@ -302,7 +297,62 @@ input {
     text-align: center;
 }
 
-.footer {
-    height: 150px;
+
+.footer ul {
+    list-style: none;
+    padding-left: 0px;
+    margin-bottom: 0;
+}
+
+.footer_area {
+    padding: 60px 0 20px;
+    position: relative;
+    color: #fff;
+    z-index: 100;
     background-color: #fefeff;
+    ;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
+.single_ftr form {
+    margin-top: 8px;
+}
+
+.single_ftr p {
+    margin-bottom: 10px;
+}
+
+.sf_title {
+    color: #836e40;
+    text-transform: uppercase;
+    font-size: 17px;
+    margin-top: 0px;
+    margin-bottom: 15px;
+}
+
+
+.single_ftr p {
+    display: inline-block;
+}
+
+.single_ftr li {
+    padding-bottom: 7px;
+    color: #836e40;
+}
+
+.single_ftr img {
+    height: 250px;
+}
+
+.single_ftr a {
+    color: #836e40;
+}
+
+.modal__text li {
+    color: #836e40;
+}
+
+.modal__text p {
+    color: #836e40;
 }
