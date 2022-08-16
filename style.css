@@ -62,6 +62,10 @@ body::-webkit-scrollbar-thumb {
     object-fit: cover;
 }
 
+.navbar_navig {
+    z-index: 1000;
+    background-color: #fefeff;
+}
 
 .start__booking {
 
@@ -70,6 +74,7 @@ body::-webkit-scrollbar-thumb {
     text-align: center;
     justify-content: center;
 }
+
 .start__booking .btn {
     margin-top: 20px;
 }
@@ -98,15 +103,20 @@ body::-webkit-scrollbar-thumb {
     color: #836e40;
 }
 
+.adres {
+    padding: 0 0.5rem;
+    font-size: 0.9rem;
+}
+
 .navbar_div {
     position: relative;
 }
 
-.navbar_div img {
-    position: absolute;
-    top: 0;
+.navbar-brand img {
     height: 150px;
-    z-index: 1021;
+    position: absolute;
+    z-index: 1050;
+    top: 0px;
 }
 
 .navbar-nav {
@@ -129,6 +139,43 @@ body::-webkit-scrollbar-thumb {
     color: #836e40;
 
 }
+
+.navbar-toggler {
+    background-color: #836e40;
+    position: absolute;
+    right: 0;
+    margin-top: 10px;
+}
+
+.navbar-toggler-icon {
+    position: relative;
+    border-top: 2px solid #CCC;
+    
+
+}
+
+.navbar-toggler-icon::before {
+
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    content: "";
+    background-color: #CCC;
+
+    left: 0;
+    bottom: 0;
+}
+
+.navbar-toggler-icon::after {
+    content: "";
+    height: 2px;
+    background-color: #CCC;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+}
+
 
 .title__block {
     font-family: 'Vezitsa', arial;
@@ -153,23 +200,16 @@ body::-webkit-scrollbar-thumb {
 }
 
 .card {
-
-    height: 500px;
+   height: 500px;
 }
 
 .card-body {
-    position: relative;
-
-
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.btn__card {
-    position: absolute;
 
-
-
-
-}
 
 .card-title {
     font-family: 'Vezitsa';
@@ -204,9 +244,9 @@ body::-webkit-scrollbar-thumb {
 }
 
 .carousel-caption {
-    background-color: #ffffff;
+    background-color: #ffffffb6;
 
-    opacity: 80%;
+
     margin-bottom: 40px;
 }
 
@@ -223,7 +263,7 @@ input {
 }
 
 .well-form1 {
-    
+
     min-height: 20px;
     padding: 19px;
     margin-bottom: 20px;
@@ -250,7 +290,7 @@ input {
 
 
 .well-form2 {
-  
+
     min-height: 20px;
     padding: 19px;
     margin-bottom: 20px;
@@ -379,16 +419,49 @@ input {
 }
 
 
-.content_info ul{
+.content_info ul {
     list-style: none;
     text-align: left;
-    
+
 }
+
 dd {
     margin-left: 35px;
 }
+
 .dd_info {
     font-family: "Vezitsa";
     color: #836e40;
     font-size: 24px;
 }
+
+@media (max-width: 990px) {
+    .navbar-brand img {
+        height: 100px;
+        left: 0;
+
+    }
+
+    .adres {
+        padding-left: 10px;
+        padding-right: 30px;
+
+    }
+    .card-body {
+        font-size: 14px;
+    }
+}
+
+@media (max-width:580px) {
+    .adres {
+        font-size: 0.5rem;
+        padding-left: 40px;
+        padding-right: 50px;
+
+    }
+}
+@media (max-width:744px) {
+    .card {
+        margin-bottom: 20px;
+    }
+} 

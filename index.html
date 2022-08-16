@@ -48,21 +48,21 @@
     <nav class="navbar navbar-expand-lg" style="height: 90px;">
         <div class="container">
 
-            <div class="col-2">
+            <div class="col-2 col-sm-2">
                 <a href="/" class="navbar-brand">
-                    <img src="img/logo.png" alt="logo" style="height: 150px;position: absolute;z-index: 100;top: 0px;">
+                    <img src="img/logo.png" alt="logo">
                 </a>
             </div>
 
-            <div class="col-10">
+            <div class="col-10 navbar_navig">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="row" style="padding: 0 0.5rem; font-size: 0.9rem;">
+                <div class="row adres">
                     <div class="col">г.Городец </br>Большой Кировский съезд, 24</div>
-                    <div class="col" style="text-align: right;">тел. 8(83161)2-26-06, +79036079661 </br>e-mail:
+                    <div class="col" style="text-align: right;">8(83161)2-26-06, +79036079661 </br>e-mail:
                         yaotel@yandex.ru</div>
                 </div>
 
@@ -121,12 +121,12 @@
                         <fieldset class="well well-form1">
                             <span class="title__booking">Забронировать сейчас</span>
                             <div class="row">
-                                <div class="col-4 col-lg-4 col-sm-12  col-xs-12">
+                                <div class="col-12 col-lg-4">
                                     <label class="control-label" for="firstname">ФИО</label>
                                     <input class="form-control" type="text" name="firstname" id="firstname"
                                         placeholder="Введите ФИО" />
                                 </div>
-                                <div class="col-4 col-lg-4 col-sm-12 col-xs-12 ">
+                                <div class="col-12 col-lg-4 ">
                                     <label class="control-label" for="phoneNumber">Номер тел.</label>
                                     <div class="form-group input-group">
                                         <span class="input-group-addon primary"><i class="fa fa-phone"></i></span>
@@ -134,7 +134,7 @@
                                             placeholder="Введите номер телефона">
                                     </div>
                                 </div>
-                                <div class="col-4 col-lg-4 col-sm-12  col-xs-12">
+                                <div class="col-12 col-lg-4 ">
                                     <label class="control-label" for="email">E-mail</label>
                                     <div class="form-group input-group">
                                         <span class="input-group-addon primary"><i class="fa fa-envelope-o"></i></span>
@@ -143,7 +143,7 @@
                                     </div>
                                 </div>
 
-                                <div class="col-4 col-lg-4 col-sm-12 col-xs-12 ">
+                                <div class="col-12 col-lg-4  ">
                                     <label class="control-label" for="booking-date">Даты:</label>
                                     <div class="form-group input-group">
                                         <input class="calendar form-control" type="text" id="calendar___"
@@ -152,7 +152,7 @@
                                 </div>
 
 
-                                <div class="col-4  col-lg-4 col-sm-12 col-xs-12">
+                                <div class="col-12  col-lg-4">
                                     <label class="control-label" for="booking-date">Номер:</label>
                                     <select class="form-select" id="specificSizeSelect">
                                         <option selected>Выберите...</option>
@@ -165,7 +165,7 @@
                                     </select>
                                 </div>
 
-                                <div class="col-4  col-lg-4 col-sm-12 col-xs-12">
+                                <div class="col-12  col-lg-4">
                                     <button class="btn btn-warning ">Отправить</button>
                                 </div>
                             </div>
@@ -312,7 +312,7 @@
                                 <span class="visually-hidden"></span>
                             </button>
                         </div>
-                        <h5 class="card-title">Полулюкс семейный</h5>
+                        <h5 class="card-title">Cемейный</h5>
                         <div class="card-body">
                             <ul>
                                 <li>Двухкомнатный номер</li>
@@ -934,7 +934,7 @@
                     <fieldset class="well well-form2">
                         <h4 class="title__booking">Забронировать номер</h4>
                         <div class="row">
-                            <div class="col-6">
+                            <div class="col-12 col-md-6">
 
                                 <label class="control-label" for="firstname">ФИО</label>
                                 <input class="form-control" type="text" name="firstname" id="firstname"
@@ -949,9 +949,9 @@
                             </div>
 
 
-                            <div class="col-6">
+                            <div class="col-12 col-md-6">
                                 <div class="row">
-                                    <div class="col-lg-3 col-md-4 col-sm-4">
+                                    <div class="col-12 col-lg-3 col-md-4 col-sm-4">
                                         <label class="control-label" for="form_days">Категория</label>
                                         <select class="form-select" id="specificSizeSelect">
                                             <option selected>Выберите...</option>
@@ -963,14 +963,14 @@
                                             <option value="6">Стандарт с балконом</option>
                                         </select>
                                     </div>
-                                    <div class="col-lg-5 col-md-5 col-sm-4">
+                                    <div class="col-12  col-lg-5 col-md-5 col-sm-4">
                                         <label class="control-label" for="booking-date">Даты заезда</label>
                                         <div class="form-group input-group">
                                             <input class="calendar form-control" type="text" id="calendar___"
                                                 name="daterange" />
                                         </div>
                                     </div>
-                                    <div class="col-lg-2 col-md-3 col-sm-3">
+                                    <div class="col-12 col-lg-2 col-md-3 col-sm-3">
                                         <label class="control-label" for="form_days">Взрослые</label>
                                         <select class="form-control" id="form_days" name="days">
                                             <option selected value=1>1</option>
@@ -980,7 +980,7 @@
                                             <option value=5>5</option>
                                         </select>
                                     </div>
-                                    <div class="col-lg-2 col-md-3 col-sm-3">
+                                    <div class="col-12 col-lg-2 col-md-3 col-sm-3">
                                         <label class="control-label" for="form_days">Дети</label>
                                         <select class="form-control" id="form_days" name="days">
                                             <option selected value=1>1</option>
@@ -991,19 +991,19 @@
                                         </select>
                                     </div>
                                 </div>
-                                <div class="col-lg-12 col-md-12 col-sm-12">
+                                <div class="col-12 col-lg-12 col-md-12 col-sm-12">
                                     <label class="control-label">Доп. информация</label>
                                     <input class="form-control" type="text" id="message" name="message"
                                         placeholder="Укажите дополнительную информацию" />
                                 </div>
-                                <div class="col-lg-12 col-md-12 col-sm-12">
+                                <div class="col-12 col-lg-12 col-md-12 col-sm-12">
                                     <label class="control-label">Согласие на обработку персональных данных</label>
                                     <div class="form-check">
                                         <input class="form-check-input form-control" type="checkbox" value=""
-                                            id="flexCheckDefault"><label class="form-check-label "
+                                            id="flexCheckDefault"><span class="form-check-label "
                                             for="flexCheckDefault">
                                             Нажимая на кнопку, я даю согласие на обработку персональных данных
-                                        </label>
+                                    </span>
                                     </div>
                                 </div>
 
@@ -1033,7 +1033,7 @@
 
             </span>
             <div class="row">
-                <div class="col-7 col-lg-7 col-md-12 col-sm-12 col-xs-12">
+                <div class="col-12 col-lg-7 ">
                     <div id="carouselHotel" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner about__hotel">
                             <div class="carousel-item active">
@@ -1064,7 +1064,7 @@
                         </button>
                     </div>
                 </div>
-                <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 col-xs-12">
+                <div class="col-12 col-lg-5  ">
                     <h4 class="title__block"> Информация о заселении</h4>
                     <div class="content_info">
                         <ul>
@@ -1215,12 +1215,12 @@
     <footer class="footer_area">
         <div class="container">
             <div class="row">
-                <div class="col-md-4 col-sm-6">
+                <div class="col-12 col-md-4 col-sm-12">
                     <div class="single_ftr">
                         <img src="img/logo.png" alt="logo">
                     </div>
                 </div> <!--  End Col -->
-                <div class="col-md-4 col-sm-6">
+                <div class="col-12 col-md-4 col-sm-12">
                     <div class="single_ftr">
                         <ul>
                             <h4 class="sf_title">Контакты</h4>
@@ -1231,7 +1231,7 @@
                         </ul>
                     </div>
                 </div> <!--  End Col -->
-                <div class="col-md-4 col-sm-6">
+                <div class="col-12 col-md-4 col-sm-12">
 
                     <div class="single_ftr">
 
