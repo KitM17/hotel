@@ -150,7 +150,7 @@ body::-webkit-scrollbar-thumb {
 .navbar-toggler-icon {
     position: relative;
     border-top: 2px solid #CCC;
-    
+
 
 }
 
@@ -200,7 +200,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .card {
-   height: 500px;
+    height: 500px;
 }
 
 .card-body {
@@ -367,7 +367,7 @@ input {
 .footer_area {
     padding: 60px 0 20px;
     position: relative;
-    color: #fff;
+
     z-index: 100;
     background-color: #fefeff;
     ;
@@ -410,14 +410,6 @@ input {
     color: #836e40;
 }
 
-.modal__text li {
-    color: #836e40;
-}
-
-.modal__text p {
-    color: #836e40;
-}
-
 
 .content_info ul {
     list-style: none;
@@ -435,6 +427,15 @@ dd {
     font-size: 24px;
 }
 
+.soc_ftr img {
+    height: 24px;
+    margin-right: 5px;
+}
+
+.soc_ftr a{
+    color: #836e40;
+}
+
 @media (max-width: 990px) {
     .navbar-brand img {
         height: 100px;
@@ -447,10 +448,12 @@ dd {
         padding-right: 30px;
 
     }
+
     .card-body {
         font-size: 14px;
     }
 }
+
 
 @media (max-width:580px) {
     .adres {
@@ -460,8 +463,9 @@ dd {
 
     }
 }
+
 @media (max-width:744px) {
     .card {
         margin-bottom: 20px;
     }
-} 
+}
