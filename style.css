@@ -242,7 +242,9 @@ body::-webkit-scrollbar-thumb {
 .card-title {
     text-align: center;
 }
-
+.form-control {
+    background-color: #ffffffb6;
+}
 .carousel-caption {
     background-color: #ffffffb6;
 
@@ -267,7 +269,7 @@ input {
     min-height: 20px;
     padding: 19px;
     margin-bottom: 20px;
-    background-color: #ffffff;
+    background-color: #ffffffb6;
     border: none;
 
 }
@@ -277,7 +279,7 @@ input {
 }
 
 .start__booking {
-    opacity: 85%;
+
     align-items: center;
     position: absolute;
     width: 100%;
@@ -302,20 +304,10 @@ input {
 }
 
 
-.well-legend {
-    display: block;
-    font-size: 14px;
-    width: auto;
-    padding: 2px 7px 2px 5px;
-    line-height: inherit;
-    color: #CCC;
-    border: none;
-    background-color: #f5f5f5;
-    margin-bottom: 0;
-}
+
 
 .input-group-addon.primary {
-    color: rgb(255, 255, 255);
+    color: #ffffffb6;
     background-color: #836e40;
 
     border-color: #836e40;
@@ -335,7 +327,9 @@ input {
 .contacts {
     background-color: rgb(255, 252, 234);
 }
-
+.content_info a {
+    color: #836e40;
+}
 .title__block {
     padding-top: 40px;
 }
